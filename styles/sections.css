@@ -56,19 +56,27 @@
 }
 
 .info .tags {
-  display: grid;
+  display: flex;
+  flex-direction: row;
   width: 100%;
-  justify-items: center;
-  font-family: var(--font-family-Maven);
-  ul {
-    list-style: none;
-    align-self: end;
-    li {
-      background-color: var(--base-color-gray-100);
-      padding: 8px 16px;
-      display: inline-block;
-      border-radius: 20px;
-    }
+  justify-content: center;
+  gap: 8px;
+  span {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    font-size: var(--text-md);
+    font-family: var(--font-family-Maven);
+    background-color: var(--base-color-gray-100);
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    height: 40px;
+    padding: 8px 16px;
+    gap: 4px;
+  }
+  span:hover{
+    background-color: var(--base-color-gray-300);
   }
 }
 
@@ -237,3 +245,5 @@
 .contact-links div:hover {
   background-color: var(--base-color-gray-100);
 }
+
+

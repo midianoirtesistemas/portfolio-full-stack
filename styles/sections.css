@@ -1,3 +1,4 @@
+/* Section CSS Guide */
 .intro{
   grid-area: Intro;
   display: grid;

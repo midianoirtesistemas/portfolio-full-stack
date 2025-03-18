@@ -113,6 +113,8 @@
   background-color: var(--base-color-gray-300);
   padding: 12px;
   border-radius: 12px;
+  cursor: pointer;
+  border: 1px solid var(--base-color-gray-300);
   img {
     width: 306px;
     height: 156px;
@@ -133,6 +135,11 @@
     font-size: var(--title-sm);
     margin-bottom: 17px;
   }
+}
+
+.card:hover{
+  background-color: var(--base-color-gray-100);
+  border: 1px solid var(--base-color-gray-300);
 }
 
 .services{
